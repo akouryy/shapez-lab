@@ -28,7 +28,7 @@ rules:
   curly: [error, all]
   jsx-quotes: [error, prefer-single]
   max-classes-per-file: off
-  multiline-ternary: [error, never]
+  multiline-ternary: off
   newline-per-chained-call: off # bug?
   no-mixed-operators:
     - error
@@ -44,6 +44,12 @@ rules:
     #- allowForLoopAfterthoughts: true
   no-restricted-syntax: off
   no-var: error
+  operator-linebreak:
+    - error
+    - after
+    - overrides:
+        ":": ignore
+        "|>": before
   prefer-const: off # -> no-autofix/prefer-const
   semi-style: [error, first]
   sort-imports:
