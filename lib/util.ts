@@ -4,6 +4,10 @@ export { v4 as uuid } from 'uuid'
 
 export const cast = <T>(t: T): T => t
 
+export const assert = (cond: boolean, msg: string): void => {
+  if(!cond) { throw new TypeError(msg) }
+}
+
 export const times = (n: number): number[] => [...Array(n).keys()]
 
 export const uptil = (f: number, t: number): number[] => (

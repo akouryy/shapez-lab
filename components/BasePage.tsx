@@ -5,7 +5,7 @@ interface P {
   title?: string
 }
 
-const TitleBase = 'my-template'
+const TitleBase = 'Shapez Lab'
 
 export const BasePage: React.FC<P> = ({ children, title }) => {
   return (
